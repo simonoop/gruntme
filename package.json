@@ -1,0 +1,20 @@
+{
+  "name": "gruntme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jshint": "jshint --config .jshintrc \"src/js\""
+  },
+  "keywords": [],
+  "author": "simon <dquintas@simonoop.com>",
+  "license": "ISC",
+  "bin": {
+    "gruntme": "./cli.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "npm": "^6.9.0"
+  }
+}

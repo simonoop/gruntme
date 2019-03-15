@@ -1,0 +1,25 @@
+{
+  "esversion":     6,
+  
+  
+  "browser":       false,
+  "browserify":    false,
+  "couch":         false,
+  "devel":         true,
+  "dojo":          false,
+  "jasmine":       false,
+  "jquery":        false,
+  "mocha":         false,
+  "mootools":      false,
+  "node":          false,
+  "nonstandard":   false,
+  "phantom":       false,
+  "prototypejs":   false,
+  "qunit":         false,
+  "rhino":         false,
+  "shelljs":       false,
+  "typed":         false,
+  "worker":        false,
+  "wsh":           false,
+  "yui":           false
+}
