@@ -1,6 +1,6 @@
 # gruntme
 
-> npm install the modules loaded in the gruntfile
+> Searches your Gruntfile for modules to install and then saves them to package json.
 
 ## Install
 

@@ -1,13 +1,16 @@
 {
   "name": "gruntme",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jshint": "jshint --config .jshintrc \"src/js\""
   },
-  "keywords": [],
+  "keywords": [
+    "grunt",
+    "install"
+  ],
   "author": "simon <dquintas@simonoop.com>",
   "license": "ISC",
   "bin": {
