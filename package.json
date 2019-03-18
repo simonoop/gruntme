@@ -14,7 +14,5 @@
     "gruntme": "./cli.js"
   },
   "devDependencies": {},
-  "dependencies": {
-    "npm": "^6.9.0"
-  }
+  "dependencies": {}
 }
