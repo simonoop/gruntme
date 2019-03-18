@@ -10,7 +10,10 @@ npm i -g gruntme
 
 ## Usage
 
-gruntme
+gruntme -S         install to dependencies
+gruntme --save     install to dependencies
+gruntme -D         install to devDependencies
+gruntme --save-dev install to devDependencies
 
 ## License
 
