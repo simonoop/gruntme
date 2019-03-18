@@ -25,7 +25,3 @@ gruntme --save-dev install to devDependencies
 [travis-url]: https://travis-ci.org/live-js/live-xxx
 [coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
 [coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
-
-## Keywords
-
-asas
