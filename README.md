@@ -1,6 +1,6 @@
 # gruntme
 
-> npm install the modules loaded in the gruntfile
+> Searches your Gruntfile for modules to install and then saves them to package json.
 
 ## Install
 
@@ -25,3 +25,7 @@ gruntme --save-dev install to devDependencies
 [travis-url]: https://travis-ci.org/live-js/live-xxx
 [coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
 [coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
+
+## Keywords
+
+asas
