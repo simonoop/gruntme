@@ -1,6 +1,6 @@
 # gruntme
 
-> Searches your Gruntfile for modules to install and then saves them to package json.
+> Searches your Gruntfile for modules loaded with loadNpmTasks and installs and adds the modules to the dependencies or devDependencies section.
 
 ## Install
 
