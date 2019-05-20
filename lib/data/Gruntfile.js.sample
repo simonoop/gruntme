@@ -1,0 +1,53 @@
+module.exports = function (grunt) {
+
+    grunt.initConfig({
+        jshint: {
+            files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+            options: {
+                jshintrc: '.jshintrc',
+                globals: {
+                    jQuery: true
+                }
+            }
+        },
+        watch: {
+            files: ['<%= jshint.files %>'],
+            tasks: ['dev']
+        },
+        browserify: {
+            browserifyOptions: {
+                debug: true
+            },
+            dist: {
+                files: {
+                    'dist/popup.js': ['src/popup/*.js']
+                },
+                options: {
+                }
+            }
+        },
+        clean: {
+            dist: ['dist'],
+        },
+        copy: {
+            main: {
+                files: [
+                    // includes files within path
+                    { expand: true, src: ['src/*', dest: 'dist/', filter: 'isFile', flatten: true },
+                    { expand: true, src: ['src/images/*'], dest: 'dist/images/', filter: 'isFile' , flatten: true},
+                ],
+            },
+        },
+    });
+
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+
+    grunt.registerTask('default', ['jshint', 'browserify']);
+    grunt.registerTask('dev', ['jshint', 'clean', 'copy', 'browserify']);
+    grunt.registerTask('devw', ['jshint', 'clean', 'copy', 'browserify', 'watch']);
+
+};
